@@ -9,8 +9,9 @@
     />
     <title>Cat Collector</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
-    <li><a href="/cats">All Cats</a></li>
-    <li><a href="/about">About</a></li>
+    <li><a href="{% url 'cat-index' %}">All Cats</a></li>
+<li><a href="{% url 'about' %}">About</a></li>
+
 
     {% block head %} 
     {% endblock %}
